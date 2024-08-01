@@ -1,0 +1,381 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.5.4",
+  "deps": {
+    "@angular/animations": "~18.1.0",
+    "@angular/common": "~18.1.0",
+    "@angular/compiler": "~18.1.0",
+    "@angular/core": "~18.1.0",
+    "@angular/forms": "~18.1.0",
+    "@angular/platform-browser": "~18.1.0",
+    "@angular/platform-browser-dynamic": "~18.1.0",
+    "@angular/router": "~18.1.0",
+    "@nx/angular": "19.5.4",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3",
+    "@angular-devkit/build-angular": "~18.1.0",
+    "@angular-devkit/core": "~18.1.0",
+    "@angular-devkit/schematics": "~18.1.0",
+    "@angular-eslint/eslint-plugin": "^18.0.1",
+    "@angular-eslint/eslint-plugin-template": "^18.0.1",
+    "@angular-eslint/template-parser": "^18.0.1",
+    "@angular/cli": "~18.1.0",
+    "@angular/compiler-cli": "~18.1.0",
+    "@angular/language-service": "~18.1.0",
+    "@nx/cypress": "19.5.4",
+    "@nx/eslint": "19.5.4",
+    "@nx/eslint-plugin": "19.5.4",
+    "@nx/jest": "19.5.4",
+    "@nx/js": "19.5.4",
+    "@nx/web": "19.5.4",
+    "@nx/workspace": "19.5.4",
+    "@schematics/angular": "~18.1.0",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "@types/jest": "^29.4.0",
+    "@types/node": "18.16.9",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "@typescript-eslint/utils": "^7.16.0",
+    "cypress": "^13.13.0",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.13.4",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "jest-preset-angular": "~14.1.0",
+    "nx": "19.5.4",
+    "prettier": "^2.6.2",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.5.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/cypress/plugin",
+      "options": {
+        "targetName": "e2e",
+        "openTargetName": "open-cypress",
+        "componentTestingTargetName": "component-test",
+        "ciTargetName": "e2e-ci"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "e2e": [
+        {
+          "file": "e2e/.eslintrc.json",
+          "hash": "16745924632016023354"
+        },
+        {
+          "file": "e2e/cypress.config.ts",
+          "hash": "15190391250164504481",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "e2e/project.json",
+          "hash": "8080373295429520651"
+        },
+        {
+          "file": "e2e/src/e2e/app.cy.ts",
+          "hash": "2588220647650846806"
+        },
+        {
+          "file": "e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "e2e/src/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "e2e/tsconfig.json",
+          "hash": "14696052795473435316"
+        }
+      ],
+      "migrate-repo": [
+        {
+          "file": ".eslintignore",
+          "hash": "7663861978715868291"
+        },
+        {
+          "file": ".eslintrc.json",
+          "hash": "12043951082061843309"
+        },
+        {
+          "file": ".nx/workspace-data/cypress-8161926102631362384.hash",
+          "hash": "14275932712766583798"
+        },
+        {
+          "file": ".nx/workspace-data/d/daemon.log",
+          "hash": "15044877463852251986"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "5407418692668764289"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "4934098906304722861"
+        },
+        {
+          "file": "README.md",
+          "hash": "18030958174876157515"
+        },
+        {
+          "file": "jest.config.ts",
+          "hash": "3539102504056704126"
+        },
+        {
+          "file": "jest.preset.js",
+          "hash": "9430166341120122740",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "nx.json",
+          "hash": "14036517725222244529"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "7201306866603217651"
+        },
+        {
+          "file": "package.json",
+          "hash": "5185989017676493777",
+          "deps": [
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular-devkit/core",
+            "npm:@angular-devkit/schematics",
+            "npm:@angular-eslint/eslint-plugin",
+            "npm:@angular-eslint/eslint-plugin-template",
+            "npm:@angular-eslint/template-parser",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@angular/language-service",
+            "npm:@nx/cypress",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/jest",
+            "npm:@nx/js",
+            "npm:@nx/web",
+            "npm:@nx/workspace",
+            "npm:@schematics/angular",
+            "npm:@swc-node/register",
+            "npm:@swc/core",
+            "npm:@swc/helpers",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@typescript-eslint/utils",
+            "npm:cypress",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-cypress",
+            "npm:jest",
+            "npm:jest-environment-jsdom",
+            "npm:jest-preset-angular",
+            "npm:nx",
+            "npm:prettier",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:typescript",
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@nx/angular",
+            "npm:rxjs",
+            "npm:tslib",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "2893909969608547296"
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "src/app/app.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "5654460193981998828"
+        },
+        {
+          "file": "src/app/app.component.spec.ts",
+          "hash": "5668134882769046122",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "18100472775122875097",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/app.config.ts",
+          "hash": "6137170128205633588",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/app.routes.ts",
+          "hash": "6185150965714414910",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/nx-welcome.component.ts",
+          "hash": "4005076182914875128",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/index.html",
+          "hash": "14858556687791940921"
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "16635586463787978962",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "16616923596177837167"
+        },
+        {
+          "file": "tsconfig.editor.json",
+          "hash": "1055794200401717100"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "564402030144987495"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "16287279946930924495"
+        },
+        {
+          "file": ".nx/workspace-data/project-graph.json",
+          "hash": "14954531514217895487"
+        },
+        {
+          "file": ".nx/workspace-data/file-map.json",
+          "hash": "3997954636701298607"
+        },
+        {
+          "file": ".nx/workspace-data/eslint-4393011795395336301.hash",
+          "hash": "5631131143841354310"
+        },
+        {
+          "file": ".git/COMMIT_EDITMSG",
+          "hash": "10681356083581819587"
+        },
+        {
+          "file": ".git/logs/refs/heads/main",
+          "hash": "15813425984808472810"
+        },
+        {
+          "file": ".git/index",
+          "hash": "6138690194953527046"
+        },
+        {
+          "file": ".git/objects/3b/46abe56bcf77a5884ef089494175c6a9349f2f",
+          "hash": "8407965717441067719"
+        },
+        {
+          "file": ".git/HEAD",
+          "hash": "6460185820263248482"
+        },
+        {
+          "file": ".git/logs/HEAD",
+          "hash": "4514842832645883329"
+        },
+        {
+          "file": ".git/refs/heads/main",
+          "hash": "3113570128743572756"
+        },
+        {
+          "file": ".git/objects/70/f5f6e7ffc914f90c82b48f2c68a8d34c392f1f",
+          "hash": "4624178123165183209"
+        },
+        {
+          "file": ".git/config",
+          "hash": "17187447999726226917"
+        },
+        {
+          "file": ".git/objects/73/2050b448b26e5042521245cbfaa2d19aa9f101",
+          "hash": "13062569992951903798"
+        },
+        {
+          "file": ".git/logs/refs/remotes/origin/main",
+          "hash": "12345328374938848793"
+        },
+        {
+          "file": ".git/refs/remotes/origin/main",
+          "hash": "3113570128743572756"
+        }
+      ]
+    }
+  }
+}
